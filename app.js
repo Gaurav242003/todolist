@@ -147,7 +147,8 @@ app.get("/:way", function (req, res) {
 app.get("/about", function (req, res) {
     res.render("about");
 });
+const port=process.env.PORT || 3000;
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("server is started on port 3000");
 });
