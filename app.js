@@ -29,14 +29,18 @@ const Topic = mongoose.model("Topic", topicShema);
 const Item = mongoose.model("Item", itemsShema);
 
 const item1 = new Item({
-    name: "Welcome"
+    name: "Welcome!"
 });
 
 const item2 = new Item({
-    name: "Add your Todo items"
+    name: "Add your To-do list"
 });
 
-const allitems = [item1, item2];
+const item3= new Item({
+    name: "<-- Hit this to delete items"
+});
+
+const allitems = [item1, item2, item3];
 
 
 
